@@ -1,0 +1,106 @@
+<!-- Body -->
+
+<div class="container mt-4" style="min-height: 670px;">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="text-decoration-none" [routerLink]="['/']"><i class="bi bi-house"></i>
+                    Trang chủ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Đăng ký</li>
+        </ol>
+    </nav>
+    <h3 class="my-4">Đăng ký</h3>
+    <form class="row my-2" method="POST" [formGroup]="resgin" (submit)="onSubmit()">
+        <div class="col-md-6 my-3">
+            <label for="" class="form-label">Họ Tên</label>
+            <input type="text" class="form-control" formControlName="name" required
+                placeholder="Nhập họ tên">
+            <div *ngIf="resgin['controls']['name'].dirty && resgin['controls']['name'].errors">
+                <small class="text-danger" *ngIf="resgin['controls']['name'].errors['required']">Tên không được
+                    để trống</small>
+                <small class="text-danger" *ngIf="resgin['controls']['name'].errors['pattern']">Tên không được có
+                    số và viết liền không dấu</small>
+            </div>
+            <small class="text-success" *ngIf="resgin['controls']['name'].valid">Họ tên đã đúng định dạng</small>
+
+        </div>
+        <div class="col-md-6 my-3">
+            <label for="" class="form-label">Tên đăng nhập</label>
+            <input type="email" class="form-control" formControlName="email" required
+                placeholder="Nhập email của bạn">
+            <div *ngIf="resgin['controls']['email'].dirty && resgin['controls']['email'].errors">
+                <small class="text-danger" *ngIf="resgin['controls']['email'].errors['required']">Email không được
+                    để trống</small>
+                <small class="text-danger" *ngIf="resgin['controls']['email'].errors['pattern']">Email không đúng định
+                    dạng</small>
+            </div>
+            <small class="text-success" *ngIf="resgin['controls']['email'].valid">Email đã đúng định dạng</small>
+        </div>
+        <div class="col-md-6 my-3">
+            <label for="" class="form-label">Số điện thoại</label>
+            <input type="text" class="form-control" formControlName="phone" placeholder="Nhập số điện thoại" required>
+            <div *ngIf="resgin['controls']['phone'].dirty && resgin['controls']['phone'].errors">
+                <small class="text-danger" *ngIf="resgin['controls']['phone'].errors['required']">Số điện thoại không được
+                    để trống</small>
+                <small class="text-danger" *ngIf="resgin['controls']['phone'].errors['pattern']">Số điện thoại không đúng định
+                    dạng</small>
+            </div>
+            <small class="text-success" *ngIf="resgin['controls']['phone'].valid">Số điện thoại đã đúng định dạng</small>
+        </div>
+        <div class="col-md-6 my-3">
+            <label for="formGroupExampleInput2" class="form-label">Mật khẩu</label>
+            <div class="input-group">
+                <input type="{{ showPassword ? 'text' : 'password' }}" formControlName="password" 
+                [(ngModel)]="password" name="password" class="form-control" placeholder="Nhập mật khẩu của bạn" required>
+                <div class="input-group-append" style="position: relative;">
+                  <span class="input-group-text" style="background-color: transparent; border: none; position: absolute; right: 0; top: 0;">
+                    <i class="bi bi-eye" (click)="toggleShowPassword()"></i>
+                  </span>
+                </div>
+            </div>
+            <div *ngIf="resgin['controls']['password'].dirty && resgin['controls']['password'].errors">
+                <small class="text-danger" *ngIf="resgin['controls']['password'].errors['required']">Password không được
+                    để trống</small>
+                <small class="text-danger" *ngIf="resgin['controls']['password'].errors['maxlength']">Password không
+                    được vượt quá 20 ký tự</small>
+                <small class="text-danger" *ngIf="resgin['controls']['password'].errors['pattern']">Password phải có ít
+                    nhất 1 ký tự đặc biệt, 1 chữ hoa, 1 chữ thường và ngắn nhất 5 ký tự</small>
+            </div>            
+            <small class="text-success" *ngIf="resgin['controls']['password'].valid">Password đã đủ mạnh</small>
+        </div>
+        <div class="col-md-6 my-3">
+            <label for="" class="form-label">Nhập lại mật khẩu</label>
+            <div class="input-group">
+                <input type="{{ showPassword ? 'text' : 'password' }}" formControlName="repassword" 
+                [(ngModel)]="repassword" name="repassword" class="form-control" placeholder="Nhập lại mật khẩu của bạn" required>
+                <div class="input-group-append" style="position: relative;">
+                  <span class="input-group-text" style="background-color: transparent; border: none; position: absolute; right: 0; top: 0;">
+                    <i class="bi bi-eye" (click)="toggleShowPassword()"></i>
+                  </span>
+                </div>
+            </div>
+            <div *ngIf="resgin['controls']['repassword'].dirty && resgin['controls']['repassword'].errors">
+                <small class="text-danger" *ngIf="resgin['controls']['password'].value !== resgin['controls']['repassword'].value">Mật khẩu nhập lại không khớp</small>
+                <small class="text-success" *ngIf="resgin['controls']['password'].value == resgin['controls']['repassword'].value">Mật khẩu đã đúng</small>
+            </div>            
+            <!-- <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Nhập lại mật khẩu"> -->
+        </div>
+
+        <div class="col-md-6 my-3">
+            <label for="formGroupExampleInput" class="form-label">Địa chỉ</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Viết liền không dấu">
+        </div>
+
+        <div class="text-end">
+            <a href="" class="mx-2">Quên mật khẩu</a>
+            <a [routerLink]="['/dangnhap']">Đăng nhập</a>
+        </div>
+
+        <div class="col-md-6 my-2">
+            <button class="btn btn-secondary w-100" type="submit" [disabled]="this.resgin.invalid">Đăng ký</button>
+        </div>
+        <div class="col-md-6 my-2">
+            <button class="btn btn-danger w-100" type="submit"><i class="bi bi-google"></i> Đăng nhập bằng
+                gmail</button>
+        </div>
+    </form>
+</div>

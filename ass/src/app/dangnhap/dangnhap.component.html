@@ -1,0 +1,64 @@
+<div class="container mt-4" style="min-height: 670px;">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="text-decoration-none" [routerLink]="['/']"><i class="bi bi-house"></i>
+                    Trang chủ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Đăng nhập</li>
+        </ol>
+    </nav>
+    <h3 class="my-4">Đăng nhập</h3>
+    <form action="" method="POST" [formGroup]="loginF" class="row my-2" (submit)="onSubmit()">
+        <div class="col-md-12 my-3">
+            <label for="formGroupExampleInput" class="form-label">Tên đăng nhập</label>
+            <input type="text" class="form-control" formControlName="email" id="formGroupExampleInput"
+                placeholder="Nhập email của bạn">
+            <div *ngIf="loginF['controls']['email'].dirty && loginF['controls']['email'].errors">
+                <small class="text-danger" *ngIf="loginF['controls']['email'].errors['required']">Tài khoản không được
+                    để trống</small>
+                <small class="text-danger" *ngIf="loginF['controls']['email'].errors['pattern']">Email không đúng định
+                    dạng</small>
+            </div>
+            <small class="text-success" *ngIf="loginF['controls']['email'].valid">Email đã đúng</small>
+        </div>
+        <div class="col-md-12 my-3">
+            <label for="formGroupExampleInput2" class="form-label">Mật khẩu</label>
+            <div class="input-group">
+                <input type="{{ showPassword ? 'text' : 'password' }}" formControlName="password" 
+                [(ngModel)]="password" name="password" class="form-control" placeholder="Nhập mật khẩu của bạn">
+                <div class="input-group-append" style="position: relative;">
+                  <span class="input-group-text" style="background-color: transparent; border: none; position: absolute; right: 0; top: 0;">
+                    <i class="bi bi-eye" (click)="toggleShowPassword()"></i>
+                  </span>
+                </div>
+            </div>
+            <div *ngIf="loginF['controls']['password'].dirty && loginF['controls']['password'].errors">
+                <small class="text-danger" *ngIf="loginF['controls']['password'].errors['required']">Password không được
+                    để trống</small>
+                <small class="text-danger" *ngIf="loginF['controls']['password'].errors['maxlength']">Password không
+                    được vượt quá 20 ký tự</small>
+                <small class="text-danger" *ngIf="loginF['controls']['password'].errors['pattern']">Password phải có ít
+                    nhất 1 ký tự đặc biệt, 1 chữ hoa, 1 chữ thường và ngắn nhất 5 ký tự</small>
+            </div>            
+            <small class="text-success" *ngIf="loginF['controls']['password'].valid">Password đã đủ mạnh</small>
+        </div>
+        <div class="d-flex justify-content-between my-4">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck" formControlName="ghinho">
+                <label class="form-check-label" for="gridCheck">
+                    Ghi nhớ
+                </label>
+            </div>
+            <div class="">
+                <a href="" class="mx-2">Quên mật khẩu</a>
+                <a [routerLink]="['/dangky']">Đăng ký</a>
+            </div>
+        </div>
+        <div class="col-md-6 my-2">
+            <button class="btn btn-secondary w-100" type="submit" [disabled]="this.loginF.invalid">Đăng nhập</button>
+        </div>
+        <div class="col-md-6 my-2">
+            <button class="btn btn-danger w-100" type="submit"><i class="bi bi-google"></i> Đăng nhập bằng
+                gmail</button>
+        </div>
+    </form>
+</div>

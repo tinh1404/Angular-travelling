@@ -1,0 +1,53 @@
+<div class="container mt-3">
+    <h4> {{productSearch.length}} kết quả tìm kiếm với từ khóa "{{keyword}}"</h4>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 my-2">
+        <div class="col" *ngFor="let p of productSearch">
+            <a [routerLink]="['/ctsp',p.id]" class="card h-100 text-decoration-none">
+                <img src="assets/img/product/{{p.image}}.jpg" class="object-fit-scale border rounded" alt="...">
+                <div class="card-header fs-5 text-danger text-truncate">{{p.name}}</div>
+                <div class="card-body">
+                    <div class="row">
+                        <ul class="col-7">
+                            <li class="list-group-item">
+                                <i class="bi bi-alarm"></i>
+                                {{p.duration}}
+                            </li>
+                            <li class="list-group-item d-flex">
+                                <i class="bi bi-calendar-check me-1">
+                                </i>
+                                {{p.calendar}}
+                            </li>
+                            <li class="list-group-item">
+                                <i class="bi bi-people"></i>
+                                Còn {{p.seat}} chỗ
+                            </li>
+                        </ul>
+
+                        <ul class="col-5 text-end">
+                            <li class="list-group-item" style=" font-size: 12px;">
+                                {{p.start}}
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </li>
+                            <li class="list-group-item text-primary">{{p.sale|number}} đ</li>
+                            <li class="list-group-item text-decoration-line-through">{{p.price|number}}</li>
+                        </ul>
+                    </div>
+                    <div class="container text-center">
+                        <div class="d-flex justify-content-center">
+                            <button class="btn btn-warning mx-1 text-white">7</button>
+                            <button class="btn btn-warning mx-1 text-white">19</button>
+                            <button class="btn btn-warning mx-1 text-white">23</button>
+                            <button class="btn btn-warning mx-1 text-white">42</button>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <p class="mx-2">Ngày</p>
+                            <p class="mx-2">Giờ</p>
+                            <p class="mx-2">Phút</p>
+                            <p class="mx-2">Giây</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "fir-angular-2174c": {
+      "hosting": {
+        "ass": [
+          "fir-angular-2174c"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "fir-angular-2174c"
+  }
+}

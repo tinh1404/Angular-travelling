@@ -1,0 +1,233 @@
+<!-- HEADER -->
+<header class="sticky-top bg-white" style="background: linear-gradient(to left, #5a81ef, #123895)">
+    <!-- menu -->
+    <div class="container p-2 ">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                <a class="navbar-brand" [routerLink]="['/']">
+                    <img src="assets/img/logo.png" alt="" class="img-">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-white active" aria-current="page" [routerLink]="['/']">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" [routerLink]="['/sanpham']">Tour du lịch</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-white dropdown-toggle" data-bs-auto-close="outside" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Du lịch trong nước
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropend">
+                                    <a class="dropdown-item dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Du lịch Miền Bắc
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" [routerLink]="['/sanpham']">Du lịch Hà Nội</a></li>
+                                        <li><a class="dropdown-item" href="#">Du lịch SaPa</a></li>
+                                        <li><a class="dropdown-item" href="#">Du lịch Hạ Long</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Du lịch Miền Nam
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Du lịch Hà Nội</a></li>
+                                        <li><a class="dropdown-item" href="#">Du lịch SaPa</a></li>
+                                        <li><a class="dropdown-item" href="#">Du lịch Hạ Long</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Du lịch Miền Trung
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Du lịch Hà Nội</a></li>
+                                        <li><a class="dropdown-item" href="#">Du lịch SaPa</a></li>
+                                        <li><a class="dropdown-item" href="#">Du lịch Hạ Long</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Du lịch theo loại hình
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Du lịch Hà Nội</a></li>
+                                        <li><a class="dropdown-item" href="#">Du lịch SaPa</a></li>
+                                        <li><a class="dropdown-item" href="#">Du lịch Hạ Long</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-white dropdown-toggle" data-bs-auto-close="outside" href="#"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Du lịch ngoài nước
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Du lịch Châu Á
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Du lịch Hà Nội</a></li>
+                                        <li><a class="dropdown-item" href="#">Du lịch SaPa</a></li>
+                                        <li><a class="dropdown-item" href="#">Du lịch Hạ Long</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Du lịch Châu Âu
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Du lịch Hà Nội</a></li>
+                                        <li><a class="dropdown-item" href="#">Du lịch SaPa</a></li>
+                                        <li><a class="dropdown-item" href="#">Du lịch Hạ Long</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Du lịch Châu Mỹ
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Du lịch Hà Nội</a></li>
+                                        <li><a class="dropdown-item" href="#">Du lịch SaPa</a></li>
+                                        <li><a class="dropdown-item" href="#">Du lịch Hạ Long</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Du lịch Châu Úc
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Du lịch Hà Nội</a></li>
+                                        <li><a class="dropdown-item" href="#">Du lịch SaPa</a></li>
+                                        <li><a class="dropdown-item" href="#">Du lịch Hạ Long</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <div class="nav-item">
+                            <a class="nav-link text-white" [routerLink]="['/tintuc']">Tin Tức</a>
+                        </div>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" [routerLink]="['/lienhe']">Liên Hệ</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <div id="cart"
+                            class="position-relative d-flex justify-content-center align-items-center rounded-circle bg-white bg-opacity-10 px-2 py-1 ">
+                            <a [routerLink]="['/giohang']">
+                                <i class="bi bi-cart fs-5  fw-bolder  text-white"></i>
+                            </a>
+                            <div class="">
+                                <span id="amount-cart"
+                                    class="text-white  position-absolute top-0 start-75 translate-middle bg-warning px-2 rounded-circle">
+                                    {{productService.getCartLength()}}
+                                </span>
+                            </div>
+                        </div>
+
+                        <div id="account" *ngIf="user; else noUser"
+                            class="d-flex justify-content-center align-items-cente text-white mx-2 px-2 py-1">
+                          
+                           <div class="dropdown">
+                            <div class="text-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Chào mừng, {{user.name}}
+                            </div>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Thông tin người dùng</a></li>
+                              <li><a class="dropdown-item" [routerLink]="['/doimatkhau']">Đổi mật khẩu</a></li>
+                              <li><a class="dropdown-item"(click)="logout()">Đăng xuất</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <ng-template #noUser>
+                            <div id="account"
+                                class="d-flex justify-content-center align-items-center rounded-circle bg-white bg-opacity-10  mx-2 px-2 py-1">
+                                <a [routerLink]="['/dangnhap']">
+                                    <i class="bi bi-person-circle fw-bolder fs-5 text-white"></i>
+                                </a>
+                            </div>
+                        </ng-template>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+</header>
+
+
+<!-- END HEADER -->
+
+
+
+
+<router-outlet />
+
+<footer style="background: linear-gradient(to left, #5a81ef, #123895);">
+    <div class="container py-4 ">
+        <div class="row">
+            <div class="col-md-3 text-center mb-4">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logo.png" alt="" class="img-fluid">
+                </a>
+                <div class="text-white py-2">Theo dõi chúng tôi</div>
+                <div class="d-flex justify-content-around">
+                    <i class="bi bi-facebook text-white"></i>
+                    <i class="bi bi-twitter text-white"></i>
+                    <i class="bi bi-youtube text-white"></i>
+                    <i class="bi bi-instagram text-white"></i>
+                    <i class="bi bi-tiktok text-white"></i>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="text-white text-uppercase mb-3 fs-4  py-2"> Khám Phá Du lịch</div>
+                <div class="text-white">Address: A68e Bình Phước, Thuận An Bình Dương</div>
+                <div class="text-white">Phone: (+084) 0398981104</div>
+                <div class="text-white">Email: </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="text-white text-uppercase mb-3 fs-4  py-2"> Mạng Xã Hội</div>
+                <div class="text-white">Facebook</div>
+                <div class="text-white">Instagram</div>
+                <div class="text-white">Youtube</div>
+                <div class="text-white">Twiter</div>
+                <div class="text-white">Youtube</div>
+            </div>
+            <div class="col-md-3">
+                <div class="text-white text-uppercase mb-3 fs-4  py-2"> Khám phá</div>
+                <p>
+                    <a class="text-white">Trang chủ</a>
+                </p>
+                <p>
+                    <a class="text-white">Giới thiệu</a>
+                </p>
+                <p>
+                    <a class="text-white">Liên hệ</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,40 @@
+<div class="d-flex justify-content-center">
+    <form action="" class="mt-5" style="width: 500px; height: 650px;" (ngSubmit)="onSubmit()">
+        <h2>Đổi mật khẩu</h2>
+        <div class="mb-4">
+            <label for="">Mật khẩu hiện tại:</label>
+            <input class="form-control" type="text" name="CurrentPassword" id="" [(ngModel)]="CurrentPassword" required>
+            <div *ngIf="CurrentPassword === '' ">
+                <small class="text-danger">Mật khẩu không được bỏ trống</small>
+            </div>
+            <div *ngIf="CurrentPassword != '' && !isCurrentPasswordValid(CurrentPassword)">
+                <small class="text-danger">Mật khẩu có ít nhất một số, một chữ, một chữ cái viết hoa và
+                    từ 6 đến 20 ký tự</small>
+            </div>
+        </div>
+        <div class="mb-4">
+            <label for="">Mật khẩu mới:</label>
+            <input class="form-control" type="text" name="password" id="" [(ngModel)]="password" required>
+            <div *ngIf="password === '' ">
+                <small class="text-danger">Mật khẩu không được bỏ trống</small>
+            </div>
+            <div *ngIf="password != '' && !isPasswordValid(password)">
+                <small class="text-danger">Mật khẩu có ít nhất một số, một chữ, một chữ cái viết hoa và
+                    từ 6 đến 20 ký tự</small>
+            </div>
+        </div>
+        <div class="mb-4">
+            <label for="">Xác nhận mật khẩu mới:</label>   
+            <input class="form-control" type="text" name="rePassword" id="" [(ngModel)]="rePassword" required>
+            <div *ngIf="rePassword === '' ">
+                <small class="text-danger">Mật khẩu không được bỏ trống</small>
+            </div>
+            <div *ngIf="rePassword !=='' && rePassword != password ">
+                <small class="text-danger">Mật khẩu không trùng</small>
+            </div>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-info text-white fw-bold w-100">Xác nhận</button>
+        </div>
+    </form>
+</div>

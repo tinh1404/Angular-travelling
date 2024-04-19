@@ -1,0 +1,334 @@
+{
+  "users": [
+    {
+      "id": "699f",
+      "name": "ttr",
+      "email": "thitrungtinh1@gmail.com",
+      "phone": "0398981104",
+      "password": "$2a$10$B3ZeQCYoDufo/YqVxq3BE.AUyvFDmNaPMO.KhNlRIno8OITdNG2ge",
+      "address": "",
+      "role": "user"
+    },
+    {
+      "id": "c548",
+      "name": "sdfds",
+      "email": "thitrungtinh@gmail.com",
+      "phone": "0398981105",
+      "password": "$2a$10$NfYWm6OOM.3nDfcu7di1IeDQodXAtSj1jzQlaPzfMHOGcxRNqvjla",
+      "address": "",
+      "role": "user"
+    },
+    {
+      "id": "a156",
+      "name": "trungtinh",
+      "email": "thitrungtinh2@gmail.com",
+      "phone": "0398981106",
+      "password": "$2a$10$T6Ovil3C0fdl.pzZtxLt.uvpzpPpYqCRcI.jYVhlBkLP.UWYI9u0K",
+      "address": "",
+      "role": "user"
+    },
+    {
+      "id": "44f9",
+      "name": "trungtinh",
+      "email": "thitrungtinh3@gmail.com",
+      "phone": "0398981089",
+      "password": "$2a$10$Yqt.ng8TqpWIeFhhnnDxEeLtb6m5Riy14Y88j4tioIUBgAQhiM7x2",
+      "address": "",
+      "role": "user"
+    }
+  ],
+  "products": [
+    {
+      "id": "p1",
+      "name": "Du Lịch Thái Lan Giá Rẻ",
+      "hot": 0,
+      "kind": "nước ngoài",
+      "image": "thailan",
+      "thumbnail": [
+        "thailan1",
+        "thailan2",
+        "thailan3"
+      ],
+      "price": 7990000,
+      "sale": 7590000,
+      "duration": "5 ngày 4 đêm",
+      "calendar": "17/3, 24/3",
+      "start": 5,
+      "seat": 6,
+      "time": "02/09/2023"
+    },
+    {
+      "id": "p2",
+      "name": "Du Lịch Nhật Bản Giá Rẻ Mùa Hoa Anh Đào - Bay Vietjet",
+      "hot": 1,
+      "kind": "ngoài nước",
+      "image": "nhatban",
+      "thumbnail": [],
+      "price": 32990000,
+      "sale": 29990000,
+      "duration": "6 ngày 5 đêm",
+      "calendar": "17/3, 24/3, 31/3, 7/4",
+      "start": 5,
+      "seat": 6,
+      "time": "02/09/2023"
+    },
+    {
+      "id": "p3",
+      "name": "DU LỊCH VŨNG TÀU GIÁ RẺ",
+      "hot": 0,
+      "kind": "trong nước",
+      "image": "vungtau",
+      "thumbnail": [
+        "vungtau1",
+        "vungtau2",
+        "vungtau3"
+      ],
+      "price": 2690000,
+      "sale": 2390000,
+      "duration": "3 ngày 2 đêm",
+      "calendar": "19/2,30/3",
+      "start": 5,
+      "seat": 20,
+      "time": "02/09/2023"
+    },
+    {
+      "id": "p4",
+      "name": "Du lịch Đà Nẵng Giá Rẻ",
+      "hot": 1,
+      "kind": "trong nước",
+      "image": "danang",
+      "thumbnail": [
+        "danang1",
+        "danang2",
+        "danang3"
+      ],
+      "price": 2550000,
+      "sale": 2350000,
+      "duration": "4 ngày 3 đêm",
+      "calendar": "23/4,26/5",
+      "start": 5,
+      "seat": 15,
+      "time": "02/09/2023"
+    },
+    {
+      "id": "p5",
+      "name": "Du Lịch Tây Nguyên Giá Rẻ",
+      "hot": 0,
+      "kind": "trong nước",
+      "image": "taynguyen",
+      "thumbnail": [
+        "taynguyen1",
+        "taynguyen2",
+        "taynguyen3"
+      ],
+      "price": 5590000,
+      "sale": 4990000,
+      "duration": "5 ngày 4 đêm",
+      "calendar": "31/5/2020",
+      "start": 5,
+      "seat": 10,
+      "time": "02/09/2023"
+    },
+    {
+      "id": "p6",
+      "name": "DU LỊCH MŨI NÉ GIÁ RẺ",
+      "hot": 0,
+      "kind": "trong nước",
+      "image": "muine",
+      "thumbnail": [
+        "muine1",
+        "muine2",
+        "muine3"
+      ],
+      "price": 6590000,
+      "sale": 5990000,
+      "duration": "4 Ngày 3 Đêm",
+      "calendar": "2/3,4/5",
+      "start": 5,
+      "seat": 10,
+      "time": "02/09/2023"
+    },
+    {
+      "id": "p7",
+      "name": "Du Lịch Đà Lạt - Tour check in",
+      "hot": 0,
+      "kind": "trong nước",
+      "image": "dalat",
+      "thumbnail": [
+        "dalat1",
+        "dalat2",
+        "dalat3"
+      ],
+      "price": 2990000,
+      "sale": 2590000,
+      "duration": "3 Ngày 2 Đêm",
+      "calendar": "1/3,15/3",
+      "start": 5,
+      "seat": 15,
+      "time": "02/09/2023"
+    },
+    {
+      "id": "p8",
+      "name": "Du Lịch Quy Nhơn - Phú Yên Giá Rẻ",
+      "hot": 0,
+      "kind": "trong nước",
+      "image": "phuyen",
+      "thumbnail": [
+        "phuyen1",
+        "phuyen2",
+        "phuyen3"
+      ],
+      "price": 5990000,
+      "sale": 4585000,
+      "duration": "5 ngày 4 đêm",
+      "calendar": "4/5,23/5",
+      "start": 5,
+      "seat": 10,
+      "time": "02/09/2023"
+    },
+    {
+      "id": "p9",
+      "name": "Du Lịch Campuchia Giá Rẻ - Siemreap - Phnompenh",
+      "hot": 0,
+      "kind": "quốc tế",
+      "image": "campuchia",
+      "thumbnail": [
+        "campuchia1",
+        "campuchia2",
+        "campuchia3"
+      ],
+      "price": 12990000,
+      "sale": 11990000,
+      "duration": "4 ngày 3 đêm",
+      "calendar": "20/6/2024",
+      "start": 5,
+      "seat": 5,
+      "time": "02/09/2023"
+    },
+    {
+      "id": "p10",
+      "name": "Du Lịch Đài Loan Giá Rẻ Mùa Hoa Anh Đào",
+      "hot": 0,
+      "kind": "quốc tế",
+      "image": "dailoan",
+      "thumbnail": [
+        "dailoan1",
+        "dailoan2",
+        "dailoan3"
+      ],
+      "price": 12990000,
+      "sale": 11790000,
+      "duration": "5 Ngày 4 Đêm",
+      "calendar": "4/7,30/7",
+      "start": 5,
+      "seat": 10,
+      "time": "02/09/2023"
+    },
+    {
+      "id": "p11",
+      "name": "Du lịch Úc - Melbourne - Canberra - Sydney",
+      "hot": 0,
+      "kind": "quốc tế",
+      "image": "uc",
+      "thumbnail": [],
+      "price": 58900000,
+      "sale": 48900000,
+      "duration": "7 Ngày 6 Đêm",
+      "calendar": "3/11/2023,11/2,12/3/2024",
+      "start": 5,
+      "seat": 8,
+      "time": "02/09/2023"
+    },
+    {
+      "id": "p12",
+      "name": "Du Lịch Singapore - Malaysia - Indonesia",
+      "hot": 0,
+      "kind": "quốc tế",
+      "image": "singapore",
+      "thumbnail": [
+        "singapore1",
+        "singapore2",
+        "singapore3"
+      ],
+      "price": 12990000,
+      "sale": 11990000,
+      "duration": "5 ngày 4 đêm",
+      "calendar": "3/2,5/2",
+      "start": 5,
+      "seat": 5,
+      "time": "02/09/2023"
+    },
+    {
+      "id": "p13",
+      "name": "Du lịch Singapore Malaysia từ Đà Nẵng",
+      "hot": 0,
+      "kind": "quốc tế",
+      "image": "malaysia",
+      "thumbnail": [],
+      "price": 10990000,
+      "sale": 10490000,
+      "duration": "5 ngày 4 đêm",
+      "calendar": "1/12,28/2",
+      "start": 5,
+      "seat": 10,
+      "time": "02/09/2023"
+    },
+    {
+      "id": "p14",
+      "name": "Du Lịch Hàn Quốc Giá Rẻ Mùa Hoa Anh Đào",
+      "hot": 1,
+      "kind": "quốc tế",
+      "image": "hanquoc",
+      "thumbnail": [
+        "hanquoc1",
+        "hanquoc2",
+        "hanquoc3"
+      ],
+      "price": 13990000,
+      "sale": 12500000,
+      "duration": "5 ngày 4 đêm",
+      "calendar": "30/12/2023",
+      "start": 5,
+      "seat": 15,
+      "time": "02/09/2023"
+    },
+    {
+      "id": "p15",
+      "name": "Du lịch Trung Quốc: Thành Đô - Cửu Trại Câu - Huyện Mậu - Gia Cô Sơn - Đô Giang Yển",
+      "hot": 0,
+      "kind": "quốc tế",
+      "image": "trungquoc",
+      "thumbnail": [
+        "trungquoc1",
+        "trungquoc2",
+        "trungquoc3"
+      ],
+      "price": 15990000,
+      "sale": 14990000,
+      "duration": "6 ngày 5 đêm",
+      "calendar": "22/12, 30/12/2023, 23/1/2024",
+      "start": 5,
+      "seat": 6,
+      "time": "02/09/2023"
+    },
+    {
+      "id": "p16",
+      "name": "Du lịch Ý- Monaco - Miền nam nước Pháp - Tây ban Nha",
+      "hot": 1,
+      "kind": "quốc tế",
+      "image": "chauau",
+      "thumbnail": [
+        "chauau1",
+        "chauau2",
+        "chauau3"
+      ],
+      "price": 59900000,
+      "sale": 57900000,
+      "duration": "10 Ngày / 09 Đêm",
+      "calendar": "18/6/2020",
+      "start": 5,
+      "seat": 8,
+      "time": "02/09/2023"
+    }
+  ]
+}
